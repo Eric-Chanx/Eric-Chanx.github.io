@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eric Chan | Full Stack Developer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="./main.css">
+<link rel="stylesheet" href="./first.css">
+<link rel="stylesheet" href="./second.css">
+
+<style>
+
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<nav>
+  <div style="display:flex;align-items:center;gap:16px;width: 380px;">
+    <!-- <div style="width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#00ffff,#8b5cf6);display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(0,255,255,.4);animation:float 3s ease-in-out infinite;">
+      <i class="fab fa-apple" style="font-size:28px;color:black;"></i>
+    </div> -->
+    <img src="./imgs/8099920a-1b26-4401-becc-75f41cc6909c.png" alt="" style="width: 22%;">
+
+    <div>
+      <div class="logo">ERIC CHAN</div>
+      <div style="font-size:12px;color:#888;letter-spacing:3px;">
+        FULL STACK ENGINEER
+      </div>
+    </div>
+  </div>
+
+  <ul>
+    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+    <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+    <li><a href="#projects"><i class="fas fa-diagram-project"></i> Projects</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    <li><a href="#reviews"><i class="fas fa-star"></i> Reviews</a></li>
+  </ul>
+
+  <li style="list-style: none;">
+  <a href="./Eric_Chan_Premium_Resume.pdf"
+   download="Eric_Chan_Premium_Resume.pdf"
+   target="_blank"
+   style="font-size:17px;">
+   <i class="fas fa-download"></i> Download CV
+</a>
+</li>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="tag">Full Stack Developer</div>
+
+    <h1>
+      Crafting
+      <span>Dreams Into</span>
+      Pixels.
+    </h1>
+
+    <p>
+      Passionate Full Stack Developer specializing in React.js, Node.js,
+      TypeScript, Next.js, PHP, MongoDB, Express.js, and Unity.
+      Focused on building scalable digital products with immersive user experiences,
+      modern architecture, and elegant interfaces.
+    </p>
+
+    <div class="btns">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div style="display:flex;justify-content:center;margin-bottom:30px;position:relative;">
+      <!-- <div class="macbook">
+        <div class="screen">
+          <div class="screen-glow"></div>
+          <div class="code-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="base"></div>
+      </div> -->
+      <div class="macbook" id="macbook">
+
+  <div class="screen">
+
+    <div class="screen-reflection"></div>
+
+    <div class="screen-glow"></div>
+
+    <div class="screen-content">
+
+      <div class="top-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="terminal">
+        <p><span class="code-blue">const</span> developer = {</p>
+        <p>&nbsp;&nbsp;name: <span class="code-green">"Eric"</span>,</p>
+        <p>&nbsp;&nbsp;stack: <span class="code-green">"MERN"</span>,</p>
+        <p>&nbsp;&nbsp;passion: <span class="code-green">"UI/UX"</span></p>
+        <p>}; <span class="cursor">|</span></p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="base"></div>
+
+</div>
+    </div>
+    <div class="tag">Primary Stack</div>
+    <h2>MERN & Modern Web</h2>
+
+    <div class="stats">
+      <div class="stat">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+      </div>
+
+      <div class="stat">
+        <i class="fab fa-node-js"></i>
+        <h3>Node.js</h3>
+      </div>
+
+      <div class="stat">
+        <i class="fas fa-code"></i>
+        <h3>TypeScript</h3>
+      </div>
+
+      <div class="stat">
+        <i class="fas fa-gamepad"></i>
+        <h3>Unity</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="experience-wrapper">
+
+  <div class="exp-content">
+
+<div class="robot">
+  🤖
+</div>
+
+
+<section id="about" class="about-section reveal">
+
+  <!-- animated particles -->
+  <div class="about-particles"></div>
+
+  <div class="title">
+    <span>About Me</span>
+    <h2>Engineering Elegant Experiences.</h2>
+  </div>
+
+  <div class="about-grid">
+
+    <div class="glass about-card">
+      <div class="glow"></div>
+
+      <div class="about-icon">
+        <i class="fas fa-code"></i>
+      </div>
+
+      <p>
+        I specialize in creating scalable web applications using React.js,
+        Node.js, Next.js, PHP, MongoDB, and modern backend technologies.
+        I enjoy transforming complex systems into intuitive and immersive
+        digital experiences.
+      </p>
+    </div>
+
+    <div class="glass about-card">
+      <div class="glow"></div>
+
+      <div class="about-icon">
+        <i class="fas fa-layer-group"></i>
+      </div>
+
+      <p>
+        Experienced in building eCommerce platforms, healthcare systems,
+        booking applications, restaurant platforms, and blockchain solutions.
+        Passionate about clean architecture, DevOps workflows,
+        and high-performance UI engineering.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="carousel">
+
+  <button class="arrow left" onclick="prevImg()">&#10094;</button>
+
+  <div class="carousel-window">
+    <img id="carouselImg" src="./imgs/business/output (1).jpg" />
+  </div>
+
+  <button class="arrow right" onclick="nextImg()">&#10095;</button>
+
+</div>
+
+<section id="skills" class="skills-section">
+  <!-- Animated Background Stars -->
+  <div class="stars2"></div>
+
+  <div class="title">
+    <span>Skills</span>
+    <h2>Technologies & Expertise</h2>
+  </div>
+
+  <div class="orbit-wrapper">
+
+    <!-- Center -->
+    <div class="center-core">
+      <span>MY SKILLS</span>
+    </div>
+
+    <!-- Orbit -->
+    <div class="orbit">
+      <div class="orbit-skill skill1">
+        <i class="fab fa-react"></i>
+        <h3>React.js</h3>
+      </div>
+
+      <div class="orbit-skill skill2">
+        <i class="fab fa-node-js"></i>
+        <h3>Node.js</h3>
+      </div>
+
+      <div class="orbit-skill skill3">
+        <i class="fas fa-code"></i>
+        <h3>TypeScript</h3>
+      </div>
+
+      <div class="orbit-skill skill4">
+        <i class="fab fa-js"></i>
+        <h3>Next.js</h3>
+      </div>
+
+      <div class="orbit-skill skill5">
+        <i class="fab fa-php"></i>
+        <h3>PHP</h3>
+      </div>
+
+      <div class="orbit-skill skill6">
+        <i class="fas fa-database"></i>
+        <h3>MongoDB</h3>
+      </div>
+
+      <div class="orbit-skill skill7">
+        <i class="fas fa-server"></i>
+        <h3>Express.js</h3>
+      </div>
+
+      <div class="orbit-skill skill8">
+        <i class="fas fa-cloud"></i>
+        <h3>Vercel</h3>
+      </div>
+
+      <div class="orbit-skill skill9">
+        <i class="fas fa-wind"></i>
+        <h3>Tailwind</h3>
+      </div>
+
+      <div class="orbit-skill skill10">
+        <i class="fab fa-docker"></i>
+        <h3>Docker</h3>
+      </div>
+
+      <div class="orbit-skill skill11">
+        <i class="fas fa-network-wired"></i>
+        <h3>Kafka</h3>
+      </div>
+
+      <div class="orbit-skill skill12">
+        <i class="fas fa-gamepad"></i>
+        <h3>Unity</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <div class="title">
+    <span>Experience</span>
+    <h2>Professional Journey</h2>
+  </div>
+
+  <div class="timeline" style="display: flex; flex-direction: column; gap: 40px;">
+
+    <div class="exp">
+      <h3>Blockchain Developer</h3>
+      <div class="stack">August 2025 - Present</div>
+      <p>
+        Developing decentralized applications, blockchain workflows,
+        smart contract integrations, wallet connectivity,
+        and secure Web3 systems for real-world client projects.
+      </p>
+    </div>
+
+    <div class="blockchain-visual">
+
+  <img src="./imgs/block chain/78f1TtQ36A2lC4fa_o31K0HbafIwTMFEQWxMPlJ3LnPOoqJgxw_Y6XzvPJPQfgnNsbtU43k-QJH705TGMC0FO0gCyy4dCiLfWxsy-lzR3XQBbs2Rzotq85TUkMKV_qhhkj0zpOklBaizlVcq9Wm3L4G-M9ziz3Rl4S7hoRphaOKVVcGoXLoXXTIgpn2FbtPB.jfif" class="btc btc1">
+  <img src="./imgs/block chain/80pbiGnmAc-MA7dYpqrGA6bHMG--Kf0aLGN4TZe_c7g8hy7qFNsDDcCegBNQNyopsHs6gGR0Il-Avmj2U_z8mipepD8Du5gd92Y_lKyrnkHG0gFaeSglQ5WYLNyLMfPir0WmZdte6Mlw2SEFWlFZBRJ-Zn7W07f2R0sUYkD089NtckJyPJThWwKzJen0hpce.jfif" class="btc btc2">
+  <img src="./imgs/block chain/bWBj4pnRngMlZBghijLScxghfWSlcOzjTEcQveBQX9kGKYaWVzn2FdnEcKeX4UJANO4Z6PCEGNTs4r0uUAz7tuCYM9hNtWx0FRT_ni0RWeyFY46owZMxYl5OG6XCs6gOxXFxbjQudN8rEceXg45oStVeVCdltdbc2BXfSde5tQRs6tqd1e0rgPKvbQE5QnTC.jfif" class="btc btc3">
+  <img src="./imgs/block chain/lcZLgCpdf6_IATNlN2uyu7U0ISer8DaUUZoYZVr3m2MmrwmNzdW7_JOYBpyoKvj7Ouy2XhM9GT91aQ3GIIfwzFYW4siPN22IlgcJ5_c4v_gZf4NO25JymKQXgGONEuQwz15W4MIG-PuXtEEBTK703iIppPjYuiVJeytfExt_UhfQT8xUz8Ah0A914xCM72rm.jfif" class="btc btc4">
+
+  <!-- standing / main image -->
+   <img src="imgs/block chain/X45pmhw-lkDtwB9yJaI7Fd_zadjaBbgHuV5jqP8AwEWMKnTNtWMz1RcFxCOxU92QifWVH0BDNKOTnKHjtiQaD4mEbHG-mKi1BYNPj71NIJA7eE769BEbI_1KXnw55z8w3XlXiBj51_uPmy7yqsjpZ6TfTcSZ_O3wlUobUzaSYF1kV1bhvzhViGDs-eZD5JOX.jfif" class="btc btc-center">
+
+</div>
+
+    <div class="exp">
+      <h3>Lead Tech Writer & Dev Advocate — FIS</h3>
+      <div class="stack">May 2023 - July 2025</div>
+      <p>
+        Revamped fintech documentation, API systems, Quickstart guides,
+        and developer platforms. Leveraged AI workflows to increase
+        productivity and improve engineering documentation quality.
+      </p>
+    </div>
+
+    <div class="fe-orbit">
+
+  <img src="imgs/frontend/1.jfif" class="fe fe1">
+  <img src="imgs/frontend/2.jpg" class="fe fe2">
+  <img src="imgs/frontend/3.jpg" class="fe fe3">
+  <img src="imgs/frontend/4.jpg" class="fe fe4">
+
+  <!-- center standing image -->
+  <img src="imgs/frontend/5.jfif" class="fe fe-center">
+
+</div>
+
+    <div class="exp">
+      <h3>Front End Engineer</h3>
+      <div class="stack">January 2019 - April 2022</div>
+      <p>
+        Developed reusable frontend systems using Vue, Tailwind CSS,
+        LitElement, and JavaScript while maintaining CI/CD pipelines
+        and collaborating with cross-functional teams.
+      </p>
+    </div>
+
+    <div class="fis-orbit">
+
+  <img src="imgs//experience/1.jfif" class="fis fis1">
+  <img src="imgs//experience/2.jfif" class="fis fis2">
+  <img src="imgs//experience/3.jfif" class="fis fis3">
+  <img src="imgs//experience/4.jfif" class="fis fis4">
+
+  <!-- center standing image -->
+  <img src="imgs//experience/5.jfif" class="fis fis-center">
+
+</div>
+
+    <div class="exp">
+      <h3>Full Stack Developer — Dubai, UAE</h3>
+      <div class="stack">October 2018 - December 2019</div>
+      <p>
+        Built scalable property management applications using React.js,
+        Node.js, MongoDB, and modern API architectures focused on
+        seamless user experiences.
+      </p>
+    </div>
+
+    <div class="fs-visual">
+
+  <img src="imgs/full stack/1.jfif" class="fs-img fs1">
+  <img src="imgs/full stack/2.jfif" class="fs-img fs2">
+  <img src="imgs/full stack/3.jfif" class="fs-img fs3">
+  <img src="imgs/full stack/4.jfif" class="fs-img fs4">
+
+  <!-- main standing image -->
+  <img src="imgs/full stack/5.jfif" class="fs-img fs-center">
+
+</div>
+
+  </div>
+</section>
+
+<section id="education" class="reveal">
+  <div class="title">
+    <span>Education</span>
+    <h2>Academic Background</h2>
+  </div>
+
+  <div class="glass education-box" style="display: flex; flex-direction: columns; justify-content: space-around;">
+    
+    <img src="./imgs/download.jfif" width="20%" alt=""> 
+
+    <div>
+        <i class="fas fa-graduation-cap"></i>
+    <h2>Hanoi University of Science and Technology</h2>
+
+    <p style="margin-top:20px">
+      Computer Science — 2016 - 2020<br>
+      Hanoi, Vietnam
+    </p>
+    </div>
+    
+  </div>
+</section>
+
+<section class="university-story" id="education">
+
+  <div class="university-bg-glow"></div>
+
+  <div class="university-header reveal-up">
+    <span class="uni-tag">Education Journey</span>
+
+    <h2>
+      Hanoi University of
+      <span>Science & Technology</span>
+    </h2>
+
+    <p>
+      My university journey shaped the engineer I am today.
+      HUST gave me not only technical knowledge,
+      but also discipline, creativity, teamwork,
+      and the courage to build meaningful technology.
+    </p>
+  </div>
+
+  <div class="story-timeline">
+
+    <!-- CARD 1 -->
+    <div class="story-card reveal-left">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/1.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">2016</div>
+
+        <h3>The Beginning</h3>
+
+        <p>
+          I entered Hanoi University of Science and Technology with a deep passion
+          for software engineering and innovation.
+          Walking through the campus for the first time felt like stepping into
+          the future I always dreamed of.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class="story-card reverse reveal-right">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/2.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">2017</div>
+
+        <h3>Learning Core Engineering</h3>
+
+        <p>
+          During my early academic years, I built strong foundations in
+          algorithms, system design, programming principles,
+          and problem-solving methodologies.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CARD 3 -->
+    <div class="story-card reveal-left">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/3.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">2017</div>
+
+        <h3>Late Night Coding Sessions</h3>
+
+        <p>
+          Many unforgettable nights were spent building projects,
+          debugging systems, and collaborating with talented classmates.
+          Those moments strengthened both my technical and teamwork skills.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CARD 4 -->
+    <div class="story-card reverse reveal-right">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/4.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">2018</div>
+
+        <h3>Discovering Modern Web Development</h3>
+
+        <p>
+          I became deeply interested in frontend engineering,
+          backend architecture, and scalable web systems.
+          This period defined my future career direction.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CARD 5 -->
+    <div class="story-card reveal-left">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/5.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">2018</div>
+
+        <h3>Team Projects & Innovation</h3>
+
+        <p>
+          University projects taught me leadership,
+          communication, collaboration,
+          and how to transform ideas into real applications.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CARD 6 -->
+    <div class="story-card reverse reveal-right">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/6.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">2019</div>
+
+        <h3>Growth & Professional Vision</h3>
+
+        <p>
+          By this stage, I had developed a strong understanding of
+          full stack systems, modern development workflows,
+          and software architecture principles.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CARD 7 -->
+    <div class="story-card reveal-left">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/7.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">2019</div>
+
+        <h3>Passion For Building Products</h3>
+
+        <p>
+          HUST inspired me to think beyond code.
+          I learned how technology can create meaningful impact
+          for businesses and people.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CARD 8 -->
+    <div class="story-card reverse reveal-right">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/8.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">2020</div>
+
+        <h3>The Final Academic Chapter</h3>
+
+        <p>
+          My final year represented growth, maturity,
+          and confidence.
+          Every challenge throughout university prepared me for
+          real-world engineering.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CARD 9 -->
+    <div class="story-card reveal-left">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/9.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">2020</div>
+
+        <h3>Graduation Day</h3>
+
+        <p>
+          Graduating from Hanoi University of Science and Technology
+          was one of the proudest moments of my life.
+          It marked the beginning of my professional engineering journey.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CARD 10 -->
+    <div class="story-card reverse reveal-right">
+      <div class="story-image-wrap">
+        <img src="./imgs/hust/10.jpg" alt="">
+      </div>
+
+      <div class="story-content">
+        <div class="story-year">Forever</div>
+
+        <h3>Proud To Be HUST Alumni</h3>
+
+        <p>
+          I will always be grateful to Hanoi University of Science and Technology.
+          The university shaped my mindset, technical expertise,
+          and professional identity.
+          HUST will always remain part of my story.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="projects" class="reveal">
+  <div class="title">
+    <span>Projects</span>
+    <h2>Selected Projects</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <a href="https://www.pickitoolite.com" target="_blank" style="text-decoration: none;">
+        <div class="project">
+      <i class="fas fa-cart-shopping"></i>
+      <h3 style="color: white;">Delivery App Inventory Sync Tool</h3>
+        <p>
+            Delivery App Inventory Sync Tool is a smart inventory management system designed for restaurants and small food businesses. It automatically syncs stock, product pricing, and menu availability across multiple delivery apps in real time, while also providing channel alerts and mobile inventory editing. This helps businesses avoid overselling, reduce manual work, and manage operations more efficiently.
+        </p>
+      <div class="stack">React • Node.js • MongoDB</div>
+    </div>
+    </a>
+    
+
+    <a href="https://hubbed.co" target="_blank" style="text-decoration: none;">
+        <div class="project">
+      <i class="fas fa-hotel"></i>
+      <h3 style="color: white;">Realtime Multi-store Inventory System</h3>
+      <p>
+        Realtime Multi-store Inventory System is a scalable platform designed to manage and synchronize inventory across multiple stores in real time. It supports bundle stock tracking, warehouse management, and a unified multi-channel dashboard to give businesses complete visibility of their operations. This system helps reduce stock mismatches, improves efficiency, and simplifies inventory control across different locations.
+      </p>
+      <div class="stack">Next.js • TypeScript • Express.js</div>
+    </div>
+    </a>
+    
+
+    <a href="https://www.mokapos.com/" target="_blank" style="text-decoration: none;">
+        <div class="project">
+      <i class="fas fa-utensils"></i>
+      <h3 style="color: white;" >Restaurant POS + AI Sales Dashboard</h3>
+      <p>
+        Restaurant POS + AI Sales Dashboard is a smart SaaS solution designed for small businesses to manage daily sales, inventory, and customer data in one unified system. It combines a POS dashboard with real-time analytics and AI-driven insights to help restaurant owners understand sales trends and improve decision-making. This system simplifies operations while providing actionable insights to increase revenue and efficiency.
+      </p>
+      <div class="stack">React • PHP • MySQL</div>
+    </div>
+    </a>
+    
+
+    <a href="https://caduceus.foundation/" target="_blank" style="text-decoration: none;">
+        <div class="project">
+      <i class="fas fa-heart-pulse"></i>
+      <h3 style="color: white;">Metaverse Infrastructure & Node Analytics Dashboard</h3>
+      <p>
+        Metaverse Infrastructure & Node Analytics Dashboard is a Web3-focused platform designed to monitor and visualize performance across metaverse nodes and blockchain infrastructure. It provides real-time insights into node health, network activity, and developer tooling metrics through a unified analytics UI. The system helps developers and operators optimize performance and reliability in emerging metaverse ecosystems.
+      </p>
+      <div class="stack">Next.js • MongoDB • TypeScript</div>
+    </div>
+    </a>
+    
+
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="title">
+    <span>Contact</span>
+    <h2>Let's Build Something Amazing.</h2>
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="glass contact-card">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <p>Olivia20033@gmail.com</p>
+    </div>
+
+    <div class="glass contact-card">
+      <i class="fab fa-github"></i>
+      <h3>GitHub</h3>
+      <p>github.com/Eric-Chanx</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="reviews" class="reveal">
+  <div class="title">
+    <span>Reviews</span>
+    <h2>People Appreciation</h2>
+  </div>
+
+  <div style="text-align:center;margin-bottom:40px;">
+    <button onclick="openReviews()" style="
+      padding:14px 30px;
+      border:none;
+      border-radius:30px;
+      background:linear-gradient(135deg,#00ffff,#8b5cf6);
+      font-weight:700;
+      cursor:pointer;
+    ">
+      View All Reviews
+    </button>
+  </div>
+</section>
+
+<!-- ================= MODAL ================= -->
+<div id="reviewModal" style="
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.8);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:2000;
+">
+
+  <div style="
+    width:90%;
+    max-width:900px;
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    max-height:80vh;
+    overflow-y:auto;
+  ">
+
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <h2>All Reviews</h2>
+      <button onclick="closeReviews()" style="
+        background:red;
+        border:none;
+        padding:8px 12px;
+        color:white;
+        border-radius:8px;
+        cursor:pointer;
+      ">X</button>
+    </div>
+
+    <div id="reviewList" style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;">
+    </div>
+
+  </div>
+</div>
+
+
+
+<footer class="clean-footer">
+
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h3>ERIC CHAN</h3>
+      <p>Full Stack Engineer</p>
+    </div>
+
+    <div class="footer-center">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-right">
+
+      <a href="#">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="#">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Eric Chan
+  </div>
+
+</footer>
+
+<script src="./script.js">
+
+</script>
+
+</body>
+</html>
